@@ -276,6 +276,209 @@ header.sticky {
   font-size: 1.9rem;
 }
 
+/* education section here */
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.education h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.education-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-column {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  margin-left: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 3.5rem;
+  padding-bottom: 3rem;
+  border-left: 0.1rem solid #aaa;
+  position: relative;
+}
+
+.education-column i {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  background: var(--main-color);
+  color: var(--white-color);
+  text-align: center;
+  position: absolute;
+  top: -1rem;
+  left: -2.5rem;
+}
+
+.education-column span {
+  font-size: 1.7rem;
+  color: var(--white-color);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--second-color);
+}
+
+.education-column h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--second-color);
+  padding-top: 3rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.education-column p {
+  font-size: 1.5rem;
+  color: var(--p-color);
+  line-height: 2;
+}
+
+/* work section here */
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.work-section h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.work-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-column {
+  width: 33.3%;
+  height: 35rem;
+  border: 2px solid rgb(222, 222, 222);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.work-column img {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.layer h4 {
+  display: none;
+  transition: all 0.4s;
+}
+
+.layer:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.5) 0%, #fcd0d0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer:hover > h4 {
+  display: block;
+}
+
+.work1 {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.work2 {
+  background-color: #faaca8;
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+}
+
+.work3 {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+/* Contact section here */
+
+.contact-section {
+  background: #f9f9f9eb;
+  width: 64%;
+  margin: 5rem auto;
+  padding: 5rem 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.2rem;
+  background-image: url(../images/intro.png);
+  background-size: cover;
+}
+.contact-info h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: var(--p-color);
+}
+.contact-info p {
+  font-size: var(--p-font);
+  color: var(--bg-color);
+  line-height: 2.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.contact-action form input[type="email"] {
+  max-width: 100%;
+  width: 47rem;
+  padding: 1.2rem 1.5rem;
+  background: var(--white-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  margin: 0 10px 20px 0;
+  border-radius: 30px;
+  font-size: 1.7rem;
+}
+.contact-action form input[type="submit"] {
+  padding: 1rem 4rem;
+  background: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  outline: none;
+  margin: 0 1rem 2rem 0;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+/* Footer Section here */
+.footer {
+  text-align: center;
+  margin: 2rem auto;
+}
+
 /* Responsive design */
 
 @media (max-width: 1425px) {
@@ -367,6 +570,17 @@ header.sticky {
 
   .skill-colmn {
     flex-basis: 30%;
+  }
+
+  .work-column {
+    width: 100%;
+  }
+  .contact-section {
+    width: 84%;
+  }
+
+  .contact-action form input[type="email"] {
+    width: 40rem;
   }
 }
 
